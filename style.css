@@ -215,21 +215,39 @@
     background: white;
     border-radius: 100%;
 }
-.blackeye{
+.blackeye1{
     position: relative;
-    top: 20px;
+    top: 10px;
     left: 10px;
     width: 30px;
-    height: 10px;
+    height: 30px;
     background: black;
-    border-radius: 50% 50% 0% 100% / 100% 100% 0% 0% ;
+    border-radius: 100%;
 }
-.mouth{
+.blackeye2{
     position: relative;
-    top: 0;
-    left: 60px;
-    width: 100px;
-    height: 20px;
-    background: black;
-    border-radius: 50% 50% 47% 53% / 0% 0% 100% 100%;
+    bottom: 11px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 100%;
+}
+.mouth1{
+    position: relative;
+    bottom: 30px;
+    left: 55px;
+    width: 90px;
+    height: 60px;
+    border: 10px solid black;
+    border-radius: 100%;
+}
+.mouth2{
+    position: relative;
+    top: -120px;
+    left: 40px;
+    width: 140px;
+    height: 80px;
+    background: green;
+    border-radius: 100%;
 }

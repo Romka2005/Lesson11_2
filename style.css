@@ -223,6 +223,10 @@
     height: 30px;
     background: black;
     border-radius: 100%;
+    transition: 1s ;
+}
+.blackeye1:hover{
+    background: blue;
 }
 .blackeye2{
     position: relative;

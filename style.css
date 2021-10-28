@@ -187,6 +187,7 @@
     background: green;
     border-radius: 100%;
     position: absolute;
+    animation: rainbow 2s linear infinite;
 }
 .eye1{
     position: relative;
@@ -196,6 +197,7 @@
     height: 100px;
     background: green;
     border-radius: 100%;
+    animation: rainbow 2s linear infinite;
 }
 .eye2{
     position: absolute;
@@ -205,6 +207,7 @@
     height: 100px;
     background: green;
     border-radius: 100%;
+    animation: rainbow 2s linear infinite;
 }
 .whiteeye{
     position: absolute;
@@ -223,10 +226,18 @@
     height: 30px;
     background: black;
     border-radius: 100%;
-    transition: 1s ;
+    animation: rainbow 1s linear infinite;
 }
-.blackeye1:hover{
-    background: blue;
+@keyframes rainbow{
+    0%{
+        background: red;
+    }
+    50%{
+        background: yellow;
+    }
+    100%{
+        background: blue;
+    }
 }
 .blackeye2{
     position: relative;
@@ -254,4 +265,75 @@
     height: 80px;
     background: green;
     border-radius: 100%;
+    animation: rainbow 2s linear infinite;
 }
+.panda,
+.ear, .face, .eye, .inner, .black, .black1, .mouth1_1, .nose{
+  position: absolute;
+}
+.panda{
+    margin-top: 1000px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.ear {
+    top: -5px;
+    left: -2px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: black;
+  }
+  
+  .ear.right {
+    transform: translateX(120px);
+  }
+  
+  .face {
+    width: 200px;
+    height: 190px;
+    border-radius: 100%;
+    background: rgb(184, 184, 184);
+  }
+  .eye {
+    top: 40px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #000;
+    clip-path: polygon(60% 0, 100% -10%, 82% 100%, 0 100%, 0% 38%);
+  }
+  
+  .eye.right {
+    margin-left: 80px;
+    transform: rotate(-70deg);
+  }
+  .inner {
+    top: 15px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 100%;
+  }
+  
+  .black{
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 100%;
+    z-index: 10;
+  }
+  .mouth1_1{
+    top: 115px;
+    left: 75px;
+    width: 50px;
+    height: 30px;
+    background: black;
+    border-radius: 100%;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 36% 100%);
+  }

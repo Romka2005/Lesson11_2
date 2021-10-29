@@ -268,7 +268,7 @@
     animation: rainbow 2s linear infinite;
 }
 .panda,
-.ear, .face, .eye, .inner, .black, .black1, .mouth1_1, .nose{
+.ear, .face, .eye, .inner, .black, .black1, .mouth1_1, .mouth1_2, .nose, .mouth{
   position: absolute;
 }
 .panda{
@@ -304,6 +304,7 @@
     border-radius: 50%;
     background: #000;
     clip-path: polygon(60% 0, 100% -10%, 82% 100%, 0 100%, 0% 38%);
+    z-index: 10;
   }
   
   .eye.right {
@@ -328,7 +329,7 @@
     border-radius: 100%;
     z-index: 10;
   }
-  .mouth1_1{
+  .nose{
     top: 115px;
     left: 75px;
     width: 50px;
@@ -336,4 +337,39 @@
     background: black;
     border-radius: 100%;
     clip-path: polygon(0 0, 100% 0, 64% 100%, 36% 100%);
+    z-index: 10;
+  }
+  .mouth1_1{
+      top: 120px;
+      left: 20px;
+      width: 80px;
+      height: 50px;
+      background: black;
+      border-radius: 100%;
+  }
+  .mouth1_1 .mouth{
+    top: -9px;
+    left: -2px;
+    width: 78px;
+    height: 60px;
+    background: rgb(184, 184, 184);
+    border-radius: 100%;
+    z-index: 0;
+  }
+  .mouth1_2{
+    top: 120px;
+    left: 100px;
+    width: 80px;
+    height: 50px;
+    background: black;
+    border-radius: 100%;
+  }
+  .mouth1_2 .mouth{
+    top: -9px;
+    left: 5px;
+    width: 77px;
+    height: 60px;
+    background: rgb(184, 184, 184);
+    border-radius: 100%;
+    z-index: 0;
   }
